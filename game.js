@@ -1,5 +1,5 @@
 const options = ["α", "ο", "γ", "τ", "ε", "ν", "η", "π", "ι", "κ"];
-let balance = 100;
+let balance = 200;
 let stake = 1;
 
 function spin(array) {
