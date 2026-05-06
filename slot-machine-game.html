@@ -1,30 +1,53 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>user@sys:Jsbkgg.space~</title>
-  <link rel="stylesheet" href="main.css">
-  <link rel="icon" type="image/x-icon" href="assets/rei.svg">
-</head>
-<body>
-    <div class="terminal">
-        <div class="section">
-            <span><--<a href="https://jsbkgg.space"> homepage</a></span>
-        </div>
-        <div class="section">
-            <div><span class="prompt"><span class="prompt-user">Jakub@jsbkgg.space</span>:<span class="prompt-dir">~/slot-machine-game</span>$</span> node game.js</div>
-            <div><a onclick="play()">spin</a><a>/</a><a onclick="stakeup()">stake up</a><a>/</a><a onclick="stakedown()">stake down</a></div>
-            <div id="game-output">
-                <div id="slots" style="display: inline-flex;">
-                <div id="slot1">-</div><div>:</div><div id="slot2">-</div><div>:</div><div id="slot3">-</div></div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>user@sys:Jsbkgg.space~</title>
+        <link rel="stylesheet" href="main.css" />
+        <link rel="icon" type="image/x-icon" href="assets/rei.svg" />
+    </head>
+    <body>
+        <div class="terminal">
+            <div class="section">
+                <span><--<a href="https://jsbkgg.space"> homepage</a></span>
             </div>
-            <div id="stats" style="display: inline-flex;">
-            <div id="status"></div><div>/Balance:  </div><div id="balance">---</div><div>/stake:</div><div id="stake">---</div>
+            <div class="section">
+                <div>
+                    <span class="prompt"
+                        ><span class="prompt-user">Jakub@jsbkgg.space</span
+                        >:<span class="prompt-dir">~/slot-machine-game</span
+                        >$</span
+                    >
+                    node game.js
+                </div>
+                <div style="display: inline-flex">
+                    <a onclick="play()">spin</a>
+                    <div>/</div>
+                    <a onclick="stakeup()">stake up</a>
+                    <div>/</div>
+                    <a onclick="stakedown()">stake down</a>
+                </div>
+                <div id="game-output">
+                    <div id="slots" style="display: inline-flex">
+                        <div id="slot1">-</div>
+                        <div>:</div>
+                        <div id="slot2">-</div>
+                        <div>:</div>
+                        <div id="slot3">-</div>
+                    </div>
+                </div>
+                <div id="stats" style="display: inline-flex">
+                    <div id="status"></div>
+                    <div>/</div>
+                    <div>Balance:</div>
+                    <div id="balance">---</div>
+                    <div>/</div>
+                    <div>stake:</div>
+                    <div id="stake">---</div>
+                </div>
             </div>
-            
         </div>
-    </div>
-<script src="game.js"></script>
-</body>
+        <script src="game.js"></script>
+    </body>
 </html>

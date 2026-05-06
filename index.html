@@ -1,191 +1,380 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>user@sys:Jsbkgg.space~</title>
-  <link rel="stylesheet" href="main.css">
-  <link rel="icon" type="image/x-icon" href="assets/rei.svg">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>user@sys:Jsbkgg.space~</title>
+        <link rel="stylesheet" href="main.css" />
+        <link rel="icon" type="image/x-icon" href="assets/rei.svg" />
+    </head>
+    <body>
+        <div class="terminal">
+            <div id="boot-log" class="section"></div>
+            <div class="section about">
+                <div>
+                    <span class="prompt"
+                        ><span class="prompt-user">Jakub@jsbkgg.space</span
+                        >:<span class="prompt-dir">~</span>$</span
+                    >
+                    cat about.txt
+                </div>
+                <br />
+                <div>> Hello, world.</div>
+                <div>> Hello, I'm Jakub! About me:</div>
+                <div>> I am a Polish student who is into:</div>
+                <div>> web development and *nix systems.</div>
+                <div>> I like anime, games, and Linux ricing.</div>
+            </div>
 
-  <div class="terminal">
-    
-    <div id="boot-log" class="section">
-    </div>
-    <div class="section about">
-      <div><span class="prompt"><span class="prompt-user">Jakub@jsbkgg.space</span>:<span class="prompt-dir">~</span>$</span> cat about.txt</div>
-      <br>
-      <div>> Hello, world.</div>
-      <div>> Hello, I'm Jakub! About me:</div>
-      <div>> I am a Polish student who is into:</div>
-      <div>> web development and *nix systems.</div>
-      <div>> I like anime, games, and Linux ricing.</div>
-    </div>
+            <div class="section socials">
+                <div>
+                    <span class="prompt"
+                        ><span class="prompt-user">Jakub@jsbkgg.space</span
+                        >:<span class="prompt-dir">~/socials</span>$</span
+                    >
+                    ls -la
+                </div>
+                <br />
+                <div class="social-link">
+                    <span class="dim-text">-rw-r--r--</span>
+                    <span class="key">github</span>
+                    <span
+                        >->
+                        <a href="https://github.com/taktojakuba" target="_blank"
+                            >github.com/taktojakuba</a
+                        ></span
+                    >
+                </div>
+                <div class="social-link">
+                    <span class="dim-text">-rw-r--r--</span>
+                    <span class="key">discord</span>
+                    <span
+                        >->
+                        <a
+                            href="https://discordapp.com/users/768727776323829790"
+                            target="_blank"
+                            >@taktojakuba</a
+                        ></span
+                    >
+                </div>
+                <div class="social-link">
+                    <span class="dim-text">-rw-r--r--</span>
+                    <span class="key">telegram</span>
+                    <span
+                        >->
+                        <a href="https://t.me/taktojakuba" target="_blank"
+                            >t.me/taktojakuba</a
+                        ></span
+                    >
+                </div>
+            </div>
+            <div class="section discord">
+                <div>
+                    <span class="prompt"
+                        ><span class="prompt-user">Jakub@jsbkgg.space</span
+                        >:<span class="prompt-dir">~/discord-status</span
+                        >$</span
+                    >
+                    ping taktojakuba@discord
+                </div>
+                <div class="key" id="discord-status"></div>
+            </div>
+            <div class="section project">
+                <div>
+                    <span class="prompt"
+                        ><span class="prompt-user">Jakub@jsbkgg.space</span
+                        >:<span class="prompt-dir">~/dotfiles</span>$</span
+                    >
+                    ls ./projects
+                </div>
+                <span
+                    >->
+                    <a href="https://ferretlinux.org" target="_blank"
+                        >ferret-project</a
+                    ></span
+                ><span>
+                    ->
+                    <a
+                        href="https://jsbkgg.space/slot-machine-game"
+                        target="_blank"
+                        >slot-machine-game</a
+                    ></span
+                >
+            </div>
+            <div class="section ricing">
+                <div>
+                    <span class="prompt"
+                        ><span class="prompt-user">Jakub@jsbkgg.space</span
+                        >:<span class="prompt-dir">~/dotfiles</span>$</span
+                    >
+                    icat ./rice/*
+                </div>
+                <div class="rice-grid">
+                    <div class="rice-card">
+                        <div class="accent-amber">
+                            drwxr-xr-x rice-01-swayfx
+                        </div>
+                        <div class="dim-text">
+                            WM: swayfx | Term: alacritty | Bar: waybar
+                        </div>
+                        <div class="rice-img-container">
+                            <img
+                                src="assets/rice1.png"
+                                alt="[ IMAGE: assets/rice1-preview.png ]"
+                            />
+                        </div>
+                    </div>
+                    <div class="rice-card">
+                        <div class="accent-amber">drwxr-xr-x rice-02-niri</div>
+                        <div class="dim-text">
+                            WM: niri | Term: kitty | Bar: noctalia-quickshell
+                        </div>
+                        <div class="rice-img-container">
+                            <img
+                                src="assets/rice2.png"
+                                alt="[ IMAGE: assets/rice2-preview.png ]"
+                            />
+                        </div>
+                    </div>
+                    <div class="rice-card">
+                        <div class="accent-amber">drwxr-xr-x rice-03-niri</div>
+                        <div class="dim-text">
+                            WM: niri | Term: foot | Bar: noctalia-quickshell
+                        </div>
+                        <div class="rice-img-container">
+                            <img
+                                src="assets/rice3.png"
+                                alt="[ IMAGE: assets/rice3-preview.png ]"
+                            />
+                        </div>
+                    </div>
+                    <div class="rice-card">
+                        <div class="accent-amber">
+                            drwxr-xr-x rice-04-mangowm
+                        </div>
+                        <div class="dim-text">
+                            WM: mangowm | Term: foot | Bar: waybar
+                        </div>
+                        <div class="rice-img-container">
+                            <img
+                                src="assets/rice4.png"
+                                alt="[ IMAGE: assets/rice4-preview.png ]"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section anime">
+                <div>
+                    <span class="prompt">
+                        <span class="prompt-user">Jakub@jsbkgg.space</span
+                        >:<span class="prompt-dir">~/anime</span>$
+                    </span>
+                    ls -la favorites
+                </div>
+                <br />
 
-    <div class="section socials">
-      <div><span class="prompt"><span class="prompt-user">Jakub@jsbkgg.space</span>:<span class="prompt-dir">~/socials</span>$</span> ls -la</div>
-      <br>
-      <div class="social-link">
-        <span class="dim-text">-rw-r--r--</span>
-        <span class="key">github</span>
-        <span>-> <a href="https://github.com/taktojakuba" target="_blank">github.com/taktojakuba</a></span>
-      </div>
-      <div class="social-link">
-        <span class="dim-text">-rw-r--r--</span>
-        <span class="key">discord</span>
-        <span>-> <a href="https://discordapp.com/users/768727776323829790" target="_blank">@taktojakuba</a></span>
-      </div>
-      <div class="social-link">
-        <span class="dim-text">-rw-r--r--</span>
-        <span class="key">telegram</span>
-        <span>-> <a href="https://t.me/taktojakuba" target="_blank">t.me/taktojakuba</a></span>
-      </div>
-    </div>
-    <div class="section discord">
-        <div><span class="prompt"><span class="prompt-user">Jakub@jsbkgg.space</span>:<span class="prompt-dir">~/discord-status</span>$</span> ping taktojakuba@discord</div>
-        <div class="key" id="discord-status"></div>
-    </div>
-    <div class="section project">
-        <div><span class="prompt"><span class="prompt-user">Jakub@jsbkgg.space</span>:<span class="prompt-dir">~/dotfiles</span>$</span> ls ./projects</div>
-        <span>-> <a href="https://zodium-project.github.io" target="_blank">zodium-project</a></span><span> -> <a href="https://jsbkgg.space/slot-machine-game" target="_blank">slot-machine-game</a></span>
-    </div>
-    <div class="section ricing">
-      <div><span class="prompt"><span class="prompt-user">Jakub@jsbkgg.space</span>:<span class="prompt-dir">~/dotfiles</span>$</span> icat ./rice/*</div>
-      <div class="rice-grid">
-        <div class="rice-card">
-          <div class="accent-amber">drwxr-xr-x rice-01-swayfx</div>
-          <div class="dim-text">WM: swayfx | Term: alacritty | Bar: waybar</div>
-          <div class="rice-img-container">
-            <img src="assets/rice1.png" alt="[ IMAGE: assets/rice1-preview.png ]">
-          </div>
-        </div>
-        <div class="rice-card">
-          <div class="accent-amber">drwxr-xr-x rice-02-niri</div>
-          <div class="dim-text">WM: niri | Term: kitty | Bar: noctalia-quickshell</div>
-          <div class="rice-img-container">
-            <img src="assets/rice2.png" alt="[ IMAGE: assets/rice2-preview.png ]">
-          </div>
-        </div>
-        <div class="rice-card">
-          <div class="accent-amber">drwxr-xr-x rice-03-niri</div>
-          <div class="dim-text">WM: niri | Term: foot | Bar: noctalia-quickshell</div>
-          <div class="rice-img-container">
-            <img src="assets/rice3.png" alt="[ IMAGE: assets/rice3-preview.png ]">
-          </div>
-        </div>
-        <div class="rice-card">
-          <div class="accent-amber">drwxr-xr-x rice-04-mangowm</div>
-          <div class="dim-text">WM: mangowm | Term: foot | Bar: waybar</div>
-          <div class="rice-img-container">
-            <img src="assets/rice4.png" alt="[ IMAGE: assets/rice4-preview.png ]">
-          </div>
-        </div>
-      </div>
-    </div>
-        <div class="section anime">
-        <div>
-            <span class="prompt">
-            <span class="prompt-user">Jakub@jsbkgg.space</span>:<span class="prompt-dir">~/anime</span>$
-            </span> ls -la favorites
-        </div>
-        <br>
+                <div class="anime-item">
+                    <span class="dim-text">-rw-r--r--</span>
+                    <span class="key">steins_gate</span>
+                    <span
+                        >->
+                        <a
+                            href="https://anilist.co/anime/9253/SteinsGate/"
+                            target="_blank"
+                            >Steins;Gate</a
+                        ></span
+                    >
+                </div>
 
-        <div class="anime-item">
-            <span class="dim-text">-rw-r--r--</span>
-            <span class="key">steins_gate</span>
-            <span>-> <a href="https://anilist.co/anime/9253/SteinsGate/" target="_blank">Steins;Gate</a></span>
-        </div>
+                <div class="anime-item">
+                    <span class="dim-text">-rw-r--r--</span>
+                    <span class="key">evangelion</span>
+                    <span
+                        >->
+                        <a
+                            href="https://anilist.co/anime/30/Shin-Seiki-Evangelion/"
+                            target="_blank"
+                            >Neon Genesis Evangelion</a
+                        ></span
+                    >
+                </div>
 
-        <div class="anime-item">
-            <span class="dim-text">-rw-r--r--</span>
-            <span class="key">evangelion</span>
-            <span>-> <a href="https://anilist.co/anime/30/Shin-Seiki-Evangelion/" target="_blank">Neon Genesis Evangelion</a></span>
-        </div>
+                <div class="anime-item">
+                    <span class="dim-text">-rw-r--r--</span>
+                    <span class="key">code_geass</span>
+                    <span
+                        >->
+                        <a
+                            href="https://anilist.co/anime/1575/Code-Geass-Hangyaku-no-Lelouch/"
+                            target="_blank"
+                            >Code Geass</a
+                        ></span
+                    >
+                </div>
 
-        <div class="anime-item">
-            <span class="dim-text">-rw-r--r--</span>
-            <span class="key">code_geass</span>
-            <span>-> <a href="https://anilist.co/anime/1575/Code-Geass-Hangyaku-no-Lelouch/" target="_blank">Code Geass</a></span>
-        </div>
+                <div class="anime-item">
+                    <span class="dim-text">-rw-r--r--</span>
+                    <span class="key">edgerunners</span>
+                    <span
+                        >->
+                        <a
+                            href="https://anilist.co/anime/120377/Cyberpunk-Edgerunners/"
+                            target="_blank"
+                            >Cyberpunk Edgerunners</a
+                        ></span
+                    >
+                </div>
 
-        <div class="anime-item">
-            <span class="dim-text">-rw-r--r--</span>
-            <span class="key">edgerunners</span>
-            <span>-> <a href="https://anilist.co/anime/120377/Cyberpunk-Edgerunners/" target="_blank">Cyberpunk Edgerunners</a></span>
-        </div>
+                <div class="anime-item">
+                    <span class="dim-text">-rw-r--r--</span>
+                    <span class="key">frieren</span>
+                    <span
+                        >->
+                        <a
+                            href="https://anilist.co/anime/154587/Sousou-no-Frieren/"
+                            target="_blank"
+                            >Sousou no Frieren</a
+                        ></span
+                    >
+                </div>
 
-        <div class="anime-item">
-            <span class="dim-text">-rw-r--r--</span>
-            <span class="key">frieren</span>
-            <span>-> <a href="https://anilist.co/anime/154587/Sousou-no-Frieren/" target="_blank">Sousou no Frieren</a></span>
-        </div>
+                <div class="anime-item">
+                    <span class="dim-text">-rw-r--r--</span>
+                    <span class="key">dr_stone</span>
+                    <span
+                        >->
+                        <a
+                            href="https://anilist.co/anime/105333/Dr-STONE/"
+                            target="_blank"
+                            >Dr. Stone</a
+                        ></span
+                    >
+                </div>
 
-        <div class="anime-item">
-            <span class="dim-text">-rw-r--r--</span>
-            <span class="key">dr_stone</span>
-            <span>-> <a href="https://anilist.co/anime/105333/Dr-STONE/" target="_blank">Dr. Stone</a></span>
-        </div>
+                <div class="anime-item">
+                    <span class="dim-text">-rw-r--r--</span>
+                    <span class="key">mushoku_tensei</span>
+                    <span
+                        >->
+                        <a
+                            href="https://anilist.co/anime/108465/Mushoku-Tensei-Isekai-Ittara-Honki-Dasu/"
+                            target="_blank"
+                            >Mushoku Tensei</a
+                        ></span
+                    >
+                </div>
 
-        <div class="anime-item">
-            <span class="dim-text">-rw-r--r--</span>
-            <span class="key">mushoku_tensei</span>
-            <span>-> <a href="https://anilist.co/anime/108465/Mushoku-Tensei-Isekai-Ittara-Honki-Dasu/" target="_blank">Mushoku Tensei</a></span>
-        </div>
+                <div class="anime-item">
+                    <span class="dim-text">-rw-r--r--</span>
+                    <span class="key">darling_franxx</span>
+                    <span
+                        >->
+                        <a
+                            href="https://anilist.co/anime/99423/Darling-in-the-Franxx/"
+                            target="_blank"
+                            >Darling in the Franxx</a
+                        ></span
+                    >
+                </div>
 
-        <div class="anime-item">
-            <span class="dim-text">-rw-r--r--</span>
-            <span class="key">darling_franxx</span>
-            <span>-> <a href="https://anilist.co/anime/99423/Darling-in-the-Franxx/" target="_blank">Darling in the Franxx</a></span>
-        </div>
+                <div class="anime-item">
+                    <span class="dim-text">-rw-r--r--</span>
+                    <span class="key">sao</span>
+                    <span
+                        >->
+                        <a
+                            href="https://anilist.co/anime/11757/Sword-Art-Online/"
+                            target="_blank"
+                            >Sword Art Online</a
+                        ></span
+                    >
+                </div>
 
-        <div class="anime-item">
-            <span class="dim-text">-rw-r--r--</span>
-            <span class="key">sao</span>
-            <span>-> <a href="https://anilist.co/anime/11757/Sword-Art-Online/" target="_blank">Sword Art Online</a></span>
-        </div>
+                <div class="anime-item">
+                    <span class="dim-text">-rw-r--r--</span>
+                    <span class="key">rezero</span>
+                    <span
+                        >->
+                        <a
+                            href="https://anilist.co/anime/21355/ReZero-kara-Hajimeru-Isekai-Seikatsu/"
+                            target="_blank"
+                            >Re:Zero</a
+                        ></span
+                    >
+                </div>
 
-        <div class="anime-item">
-            <span class="dim-text">-rw-r--r--</span>
-            <span class="key">rezero</span>
-            <span>-> <a href="https://anilist.co/anime/21355/ReZero-kara-Hajimeru-Isekai-Seikatsu/" target="_blank">Re:Zero</a></span>
-        </div>
+                <div class="anime-item">
+                    <span class="dim-text">-rw-r--r--</span>
+                    <span class="key">chainsaw_man</span>
+                    <span
+                        >->
+                        <a
+                            href="https://anilist.co/anime/127230/Chainsaw-Man/"
+                            target="_blank"
+                            >Chainsaw Man</a
+                        ></span
+                    >
+                </div>
 
-        <div class="anime-item">
-            <span class="dim-text">-rw-r--r--</span>
-            <span class="key">chainsaw_man</span>
-            <span>-> <a href="https://anilist.co/anime/127230/Chainsaw-Man/" target="_blank">Chainsaw Man</a></span>
-        </div>
+                <div class="anime-item">
+                    <span class="dim-text">-rw-r--r--</span>
+                    <span class="key">bleach</span>
+                    <span
+                        >->
+                        <a
+                            href="https://anilist.co/anime/269/BLEACH/"
+                            target="_blank"
+                            >Bleach</a
+                        ></span
+                    >
+                </div>
 
-        <div class="anime-item">
-            <span class="dim-text">-rw-r--r--</span>
-            <span class="key">bleach</span>
-            <span>-> <a href="https://anilist.co/anime/269/BLEACH/" target="_blank">Bleach</a></span>
-        </div>
+                <div class="anime-item">
+                    <span class="dim-text">-rw-r--r--</span>
+                    <span class="key">tokyo_ghoul</span>
+                    <span
+                        >->
+                        <a
+                            href="https://anilist.co/anime/20605/Tokyo-Ghoul/"
+                            target="_blank"
+                            >Tokyo Ghoul</a
+                        ></span
+                    >
+                </div>
 
-        <div class="anime-item">
-            <span class="dim-text">-rw-r--r--</span>
-            <span class="key">tokyo_ghoul</span>
-            <span>-> <a href="https://anilist.co/anime/20605/Tokyo-Ghoul/" target="_blank">Tokyo Ghoul</a></span>
-        </div>
+                <div class="anime-item">
+                    <span class="dim-text">-rw-r--r--</span>
+                    <span class="key">jjk</span>
+                    <span
+                        >->
+                        <a
+                            href="https://anilist.co/anime/113415/Jujutsu-Kaisen/"
+                            target="_blank"
+                            >Jujutsu Kaisen</a
+                        ></span
+                    >
+                </div>
 
-        <div class="anime-item">
-            <span class="dim-text">-rw-r--r--</span>
-            <span class="key">jjk</span>
-            <span>-> <a href="https://anilist.co/anime/113415/Jujutsu-Kaisen/" target="_blank">Jujutsu Kaisen</a></span>
+                <div class="anime-item">
+                    <span class="dim-text">-rw-r--r--</span>
+                    <span class="key">spy_family</span>
+                    <span
+                        >->
+                        <a
+                            href="https://anilist.co/anime/140960/SPYFAMILY/"
+                            target="_blank"
+                            >Spy x Family</a
+                        ></span
+                    >
+                </div>
+            </div>
+            <div id="footer">
+                <div class="dim-text">
+                    SYSLOG: System running normally. Daemon active.
+                </div>
+            </div>
         </div>
-
-        <div class="anime-item">
-            <span class="dim-text">-rw-r--r--</span>
-            <span class="key">spy_family</span>
-            <span>-> <a href="https://anilist.co/anime/140960/SPYFAMILY/" target="_blank">Spy x Family</a></span>
-        </div>
-        </div>
-    <div id="footer">
-      <div class="dim-text">SYSLOG: System running normally. Daemon active.</div>
-    </div>
-  </div>
-
-</body>
-<script src="script.js"></script>
+    </body>
+    <script src="script.js"></script>
 </html>
